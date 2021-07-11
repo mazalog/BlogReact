@@ -1,0 +1,128 @@
+.top {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+  font-family: "Josefin Sans", sans-serif;
+}
+.top .navItems {
+  display: flex;
+
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonNav{
+  position: relative;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-left: 5rem;
+
+}
+
+.buttonNav .fa-bars,
+.fa-times,
+input[type="checkbox"] {
+  right: 50%;
+  left: 50%;
+  position: absolute;
+
+}
+
+.top input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+  opacity:0;
+}
+.top .fa-bars,
+.fa-times {
+  font-size: 48px;
+  pointer-events: none;
+  display: none;
+}
+
+.topLeft,
+.topRight {
+  flex: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+  
+
+}
+
+.topCenter {
+  flex: 100;
+  
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.topListItem:hover {
+  color: gray;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.topSearchIcon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .topCenter .topList {
+    display: none;
+    width: 100%;
+  }
+  .top {
+      display: flex;
+  justify-content: center;
+
+
+  }
+  .top input[type="checkbox"]{
+    position: absolute;
+ 
+  }
+  .top  .fa-bars{
+    display:initial;
+    
+  }
+}
